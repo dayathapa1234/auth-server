@@ -1,0 +1,41 @@
+package org.springframework.boot.autoconfigure.security.oauth2.resource.servlet;
+
+import org.springframework.aot.generate.Generated;
+import org.springframework.beans.factory.config.BeanDefinition;
+import org.springframework.beans.factory.support.RootBeanDefinition;
+
+/**
+ * Bean definitions for {@link OAuth2ResourceServerOpaqueTokenConfiguration}.
+ */
+@Generated
+public class OAuth2ResourceServerOpaqueTokenConfiguration__BeanDefinitions {
+  /**
+   * Bean definitions for {@link OAuth2ResourceServerOpaqueTokenConfiguration.OAuth2SecurityFilterChainConfiguration}.
+   */
+  @Generated
+  public static class OAuth2SecurityFilterChainConfiguration {
+    /**
+     * Get the bean definition for 'oAuth2SecurityFilterChainConfiguration'.
+     */
+    public static BeanDefinition getOAuthSecurityFilterChainConfigurationBeanDefinition() {
+      RootBeanDefinition beanDefinition = new RootBeanDefinition(OAuth2ResourceServerOpaqueTokenConfiguration.OAuth2SecurityFilterChainConfiguration.class);
+      beanDefinition.setInstanceSupplier(OAuth2ResourceServerOpaqueTokenConfiguration.OAuth2SecurityFilterChainConfiguration::new);
+      return beanDefinition;
+    }
+  }
+
+  /**
+   * Bean definitions for {@link OAuth2ResourceServerOpaqueTokenConfiguration.OpaqueTokenIntrospectionClientConfiguration}.
+   */
+  @Generated
+  public static class OpaqueTokenIntrospectionClientConfiguration {
+    /**
+     * Get the bean definition for 'opaqueTokenIntrospectionClientConfiguration'.
+     */
+    public static BeanDefinition getOpaqueTokenIntrospectionClientConfigurationBeanDefinition() {
+      RootBeanDefinition beanDefinition = new RootBeanDefinition(OAuth2ResourceServerOpaqueTokenConfiguration.OpaqueTokenIntrospectionClientConfiguration.class);
+      beanDefinition.setInstanceSupplier(OAuth2ResourceServerOpaqueTokenConfiguration.OpaqueTokenIntrospectionClientConfiguration::new);
+      return beanDefinition;
+    }
+  }
+}
