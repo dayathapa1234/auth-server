@@ -1,5 +1,6 @@
 package com.nuvesta.auth_server;
 
+import com.nuvesta.auth_server.controller.AuthController__BeanDefinitions;
 import org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator__BeanDefinitions;
 import org.springframework.aot.generate.Generated;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
@@ -125,6 +126,10 @@ public class AuthServerApplication__BeanFactoryRegistrations {
     beanFactory.registerBeanDefinition("org.springframework.context.event.internalEventListenerProcessor", EventListenerMethodProcessor__BeanDefinitions.getInternalEventListenerProcessorBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.context.event.internalEventListenerFactory", DefaultEventListenerFactory__BeanDefinitions.getInternalEventListenerFactoryBeanDefinition());
     beanFactory.registerBeanDefinition("authServerApplication", AuthServerApplication__BeanDefinitions.getAuthServerApplicationBeanDefinition());
+    beanFactory.registerBeanDefinition("authController", AuthController__BeanDefinitions.getAuthControllerBeanDefinition());
+    beanFactory.registerBeanDefinition("filterChain", AuthServerApplication__BeanDefinitions.getFilterChainBeanDefinition());
+    beanFactory.registerBeanDefinition("userDetailsService", AuthServerApplication__BeanDefinitions.getUserDetailsServiceBeanDefinition());
+    beanFactory.registerBeanDefinition("passwordEncoder", AuthServerApplication__BeanDefinitions.getPasswordEncoderBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.AutoConfigurationPackages", AutoConfigurationPackages__BeanDefinitions.BasePackages.getAutoConfigurationPackagesBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration", PropertyPlaceholderAutoConfiguration__BeanDefinitions.getPropertyPlaceholderAutoConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("propertySourcesPlaceholderConfigurer", PropertyPlaceholderAutoConfiguration__BeanDefinitions.getPropertySourcesPlaceholderConfigurerBeanDefinition());
@@ -328,10 +333,8 @@ public class AuthServerApplication__BeanFactoryRegistrations {
     beanFactory.registerBeanDefinition("spring.security.oauth2.authorizationserver-org.springframework.boot.autoconfigure.security.oauth2.server.servlet.OAuth2AuthorizationServerProperties", OAuth2AuthorizationServerProperties__BeanDefinitions.getOAuthAuthorizationServerPropertiesBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.oauth2.server.servlet.OAuth2AuthorizationServerAutoConfiguration", OAuth2AuthorizationServerAutoConfiguration__BeanDefinitions.getOAuthAuthorizationServerAutoConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerJwtConfiguration$JwtDecoderConfiguration", OAuth2ResourceServerJwtConfiguration__BeanDefinitions.JwtDecoderConfiguration.getJwtDecoderConfigurationBeanDefinition());
-    beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerJwtConfiguration$OAuth2SecurityFilterChainConfiguration", OAuth2ResourceServerJwtConfiguration__BeanDefinitions.OAuth2SecurityFilterChainConfiguration.getOAuthSecurityFilterChainConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.Oauth2ResourceServerConfiguration$JwtConfiguration", Oauth2ResourceServerConfiguration__BeanDefinitions.JwtConfiguration.getJwtConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerOpaqueTokenConfiguration$OpaqueTokenIntrospectionClientConfiguration", OAuth2ResourceServerOpaqueTokenConfiguration__BeanDefinitions.OpaqueTokenIntrospectionClientConfiguration.getOpaqueTokenIntrospectionClientConfigurationBeanDefinition());
-    beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerOpaqueTokenConfiguration$OAuth2SecurityFilterChainConfiguration", OAuth2ResourceServerOpaqueTokenConfiguration__BeanDefinitions.OAuth2SecurityFilterChainConfiguration.getOAuthSecurityFilterChainConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.Oauth2ResourceServerConfiguration$OpaqueTokenConfiguration", Oauth2ResourceServerConfiguration__BeanDefinitions.OpaqueTokenConfiguration.getOpaqueTokenConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerAutoConfiguration", OAuth2ResourceServerAutoConfiguration__BeanDefinitions.getOAuthResourceServerAutoConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("spring.security.oauth2.resourceserver-org.springframework.boot.autoconfigure.security.oauth2.resource.OAuth2ResourceServerProperties", OAuth2ResourceServerProperties__BeanDefinitions.getOAuthResourceServerPropertiesBeanDefinition());
@@ -362,8 +365,6 @@ public class AuthServerApplication__BeanFactoryRegistrations {
     beanFactory.registerBeanDefinition("authenticationManagerPostProcessor", ObservationConfiguration__BeanDefinitions.getAuthenticationManagerPostProcessorBeanDefinition());
     beanFactory.registerBeanDefinition("filterChainDecoratorPostProcessor", ObservationConfiguration__BeanDefinitions.getFilterChainDecoratorPostProcessorBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration", SpringBootWebSecurityConfiguration__BeanDefinitions.WebSecurityEnablerConfiguration.getWebSecurityEnablerConfigurationBeanDefinition());
-    beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$SecurityFilterChainConfiguration", SpringBootWebSecurityConfiguration__BeanDefinitions.SecurityFilterChainConfiguration.getSecurityFilterChainConfigurationBeanDefinition());
-    beanFactory.registerBeanDefinition("defaultSecurityFilterChain", SpringBootWebSecurityConfiguration__BeanDefinitions.SecurityFilterChainConfiguration.getDefaultSecurityFilterChainBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration", SpringBootWebSecurityConfiguration__BeanDefinitions.getSpringBootWebSecurityConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration", SecurityAutoConfiguration__BeanDefinitions.getSecurityAutoConfigurationBeanDefinition());
     beanFactory.registerBeanDefinition("authenticationEventPublisher", SecurityAutoConfiguration__BeanDefinitions.getAuthenticationEventPublisherBeanDefinition());

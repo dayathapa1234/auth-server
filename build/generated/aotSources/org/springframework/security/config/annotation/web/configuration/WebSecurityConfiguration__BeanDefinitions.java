@@ -108,7 +108,7 @@ public class WebSecurityConfiguration__BeanDefinitions {
   }
 
   /**
-   * Get the bean instance supplier for '(inner bean)#671ea6ff'.
+   * Get the bean instance supplier for '(inner bean)#5ae1c281'.
    */
   private static BeanInstanceSupplier<Filter> getSpringSecurityFilterChainInnerBeanInstanceSupplier(
       ) {
@@ -133,7 +133,7 @@ public class WebSecurityConfiguration__BeanDefinitions {
   @Generated
   public static class CompositeFilterChainProxy {
     /**
-     * Get the bean instance supplier for '(inner bean)#3d299393'.
+     * Get the bean instance supplier for '(inner bean)#526e8108'.
      */
     private static BeanInstanceSupplier<WebSecurityConfiguration.CompositeFilterChainProxy> getSpringSecurityFilterChainInnerBeanInstanceSupplier(
         ) {

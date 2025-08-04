@@ -101,6 +101,34 @@
     "name": "com.nuvesta.auth_server.AuthServerApplication",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
+    "allPublicMethods": true,
+    "allDeclaredMethods": true,
+    "queriedMethods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "filterChain",
+        "parameterTypes": [
+          "org.springframework.security.config.annotation.web.builders.HttpSecurity"
+        ]
+      },
+      {
+        "name": "passwordEncoder",
+        "parameterTypes": [ ]
+      },
+      {
+        "name": "userDetailsService",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.nuvesta.auth_server.AuthServerApplication$$SpringCGLIB$$0",
+    "allDeclaredFields": true,
+    "allDeclaredConstructors": true,
+    "allDeclaredMethods": true,
     "queriedMethods": [
       {
         "name": "<init>",
@@ -109,11 +137,36 @@
     ]
   },
   {
+    "name": "com.nuvesta.auth_server.AuthServerApplication$$SpringCGLIB$$FastClass$$0",
+    "allDeclaredConstructors": true
+  },
+  {
+    "name": "com.nuvesta.auth_server.AuthServerApplication$$SpringCGLIB$$FastClass$$1",
+    "allDeclaredConstructors": true
+  },
+  {
     "name": "com.nuvesta.auth_server.AuthServerApplication__ApplicationContextInitializer",
     "condition": {
       "typeReachable": "com.nuvesta.auth_server.AuthServerApplication"
     },
     "methods": [
+      {
+        "name": "<init>",
+        "parameterTypes": [ ]
+      }
+    ]
+  },
+  {
+    "name": "com.nuvesta.auth_server.controller.AuthController",
+    "queryAllPublicMethods": true,
+    "queryAllDeclaredMethods": true,
+    "methods": [
+      {
+        "name": "ping",
+        "parameterTypes": [ ]
+      }
+    ],
+    "queriedMethods": [
       {
         "name": "<init>",
         "parameterTypes": [ ]
@@ -3357,28 +3410,6 @@
     ]
   },
   {
-    "name": "org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerJwtConfiguration$OAuth2SecurityFilterChainConfiguration",
-    "queryAllPublicMethods": true,
-    "queryAllDeclaredMethods": true,
-    "queriedMethods": [
-      {
-        "name": "<init>",
-        "parameterTypes": [ ]
-      }
-    ]
-  },
-  {
-    "name": "org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerOpaqueTokenConfiguration$OAuth2SecurityFilterChainConfiguration",
-    "queryAllPublicMethods": true,
-    "queryAllDeclaredMethods": true,
-    "queriedMethods": [
-      {
-        "name": "<init>",
-        "parameterTypes": [ ]
-      }
-    ]
-  },
-  {
     "name": "org.springframework.boot.autoconfigure.security.oauth2.resource.servlet.OAuth2ResourceServerOpaqueTokenConfiguration$OpaqueTokenIntrospectionClientConfiguration",
     "queryAllPublicMethods": true,
     "queryAllDeclaredMethods": true,
@@ -4118,23 +4149,6 @@
       {
         "name": "<init>",
         "parameterTypes": [ ]
-      }
-    ]
-  },
-  {
-    "name": "org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$SecurityFilterChainConfiguration",
-    "queryAllPublicMethods": true,
-    "queryAllDeclaredMethods": true,
-    "queriedMethods": [
-      {
-        "name": "<init>",
-        "parameterTypes": [ ]
-      },
-      {
-        "name": "defaultSecurityFilterChain",
-        "parameterTypes": [
-          "org.springframework.security.config.annotation.web.builders.HttpSecurity"
-        ]
       }
     ]
   },
@@ -11797,8 +11811,18 @@
     "allPublicMethods": true
   },
   {
+    "name": "org.springframework.security.core.userdetails.UserDetailsService",
+    "queryAllPublicMethods": true,
+    "queryAllDeclaredMethods": true
+  },
+  {
     "name": "org.springframework.security.core.userdetails.UsernameNotFoundException",
     "allDeclaredConstructors": true
+  },
+  {
+    "name": "org.springframework.security.crypto.password.PasswordEncoder",
+    "queryAllPublicMethods": true,
+    "queryAllDeclaredMethods": true
   },
   {
     "name": "org.springframework.security.oauth2.jwt.JwtDecoder",

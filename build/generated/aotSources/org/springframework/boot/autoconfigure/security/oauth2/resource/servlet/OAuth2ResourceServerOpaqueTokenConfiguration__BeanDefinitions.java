@@ -10,21 +10,6 @@ import org.springframework.beans.factory.support.RootBeanDefinition;
 @Generated
 public class OAuth2ResourceServerOpaqueTokenConfiguration__BeanDefinitions {
   /**
-   * Bean definitions for {@link OAuth2ResourceServerOpaqueTokenConfiguration.OAuth2SecurityFilterChainConfiguration}.
-   */
-  @Generated
-  public static class OAuth2SecurityFilterChainConfiguration {
-    /**
-     * Get the bean definition for 'oAuth2SecurityFilterChainConfiguration'.
-     */
-    public static BeanDefinition getOAuthSecurityFilterChainConfigurationBeanDefinition() {
-      RootBeanDefinition beanDefinition = new RootBeanDefinition(OAuth2ResourceServerOpaqueTokenConfiguration.OAuth2SecurityFilterChainConfiguration.class);
-      beanDefinition.setInstanceSupplier(OAuth2ResourceServerOpaqueTokenConfiguration.OAuth2SecurityFilterChainConfiguration::new);
-      return beanDefinition;
-    }
-  }
-
-  /**
    * Bean definitions for {@link OAuth2ResourceServerOpaqueTokenConfiguration.OpaqueTokenIntrospectionClientConfiguration}.
    */
   @Generated

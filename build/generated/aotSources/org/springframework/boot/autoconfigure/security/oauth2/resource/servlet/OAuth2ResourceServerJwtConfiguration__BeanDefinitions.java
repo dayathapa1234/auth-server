@@ -35,19 +35,4 @@ public class OAuth2ResourceServerJwtConfiguration__BeanDefinitions {
       return beanDefinition;
     }
   }
-
-  /**
-   * Bean definitions for {@link OAuth2ResourceServerJwtConfiguration.OAuth2SecurityFilterChainConfiguration}.
-   */
-  @Generated
-  public static class OAuth2SecurityFilterChainConfiguration {
-    /**
-     * Get the bean definition for 'oAuth2SecurityFilterChainConfiguration'.
-     */
-    public static BeanDefinition getOAuthSecurityFilterChainConfigurationBeanDefinition() {
-      RootBeanDefinition beanDefinition = new RootBeanDefinition(OAuth2ResourceServerJwtConfiguration.OAuth2SecurityFilterChainConfiguration.class);
-      beanDefinition.setInstanceSupplier(OAuth2ResourceServerJwtConfiguration.OAuth2SecurityFilterChainConfiguration::new);
-      return beanDefinition;
-    }
-  }
 }
